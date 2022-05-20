@@ -10,19 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Funkids">
         <activity
+            android:name=".Animal"
+            android:exported="false" />
+        <activity
             android:name=".ListOfAnimals"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            </activity>
+        </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
