@@ -14,7 +14,7 @@
         android:layout_marginBottom="52dp"
         android:drawableStart="@mipmap/ic_launcher_foreground"
         android:shadowRadius="10"
-        android:text="Play"
+        android:text="Quiz"
         android:textSize="20sp"
         app:cornerRadius="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,7 +51,7 @@
         app:srcCompat="@drawable/animals" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/start"
         android:layout_width="94dp"
         android:layout_height="101dp"
         android:layout_marginBottom="4dp"
@@ -69,7 +69,8 @@
         android:id="@+id/imageView5"
         android:layout_width="412dp"
         android:layout_height="364dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:srcCompat="@drawable/elephant"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/elephant" />
 </androidx.constraintlayout.widget.ConstraintLayout>
