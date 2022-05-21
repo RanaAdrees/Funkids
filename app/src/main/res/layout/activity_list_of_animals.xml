@@ -7,7 +7,7 @@
     tools:context=".ListOfAnimals">
 
     <ImageButton
-        android:id="@+id/imageButton43"
+        android:id="@+id/rhino"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
@@ -15,8 +15,8 @@
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton13"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton12"
+        app:layout_constraintStart_toEndOf="@+id/rabbit"
+        app:layout_constraintTop_toBottomOf="@+id/cat"
         app:srcCompat="@drawable/tiger" />
 
     <ImageButton
@@ -25,6 +25,7 @@
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#FA7E3B"
+        android:onClick="animalFunc"
         android:scaleType="centerInside"
         app:layout_constraintEnd_toStartOf="@+id/baby_elephent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -39,15 +40,16 @@
         android:layout_marginTop="8dp"
         android:backgroundTint="#DCD8D6"
         android:contentDescription="@string/animal_name"
+        android:onClick="animalFunc"
         android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton12"
+        app:layout_constraintEnd_toStartOf="@+id/cat"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tiger"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baby_elephent" />
 
     <ImageButton
-        android:id="@+id/imageButton12"
+        android:id="@+id/cat"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
@@ -60,46 +62,47 @@
         app:srcCompat="@drawable/tiger" />
 
     <ImageButton
-        android:id="@+id/imageButton42"
+        android:id="@+id/panda"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#FA7E3B"
         android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton13"
+        app:layout_constraintEnd_toStartOf="@+id/rabbit"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tiger"
         app:srcCompat="@drawable/tiger" />
 
     <ImageButton
-        android:id="@+id/imageButton13"
+        android:id="@+id/rabbit"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#FA7E3B"
         android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton43"
+        app:layout_constraintEnd_toStartOf="@+id/rhino"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton42"
+        app:layout_constraintStart_toEndOf="@+id/panda"
         app:layout_constraintTop_toBottomOf="@+id/baby_elephent"
         app:srcCompat="@drawable/tiger" />
 
     <ImageButton
-        android:id="@+id/imageButton45"
+        android:id="@+id/crocodile"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#FA7E3B"
+        android:contentDescription="@string/animal_name"
         android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton46"
+        app:layout_constraintEnd_toStartOf="@+id/deer"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton44"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton13"
+        app:layout_constraintStart_toEndOf="@+id/snake"
+        app:layout_constraintTop_toBottomOf="@+id/rabbit"
         app:srcCompat="@drawable/tiger" />
 
     <ImageButton
-        android:id="@+id/imageButton46"
+        android:id="@+id/deer"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
@@ -107,38 +110,78 @@
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton45"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton43"
+        app:layout_constraintStart_toEndOf="@+id/crocodile"
+        app:layout_constraintTop_toBottomOf="@+id/rhino"
         app:srcCompat="@drawable/tiger" />
 
     <ImageButton
-        android:id="@+id/imageButton48"
+        android:id="@+id/dog"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#FA7E3B"
         android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton47"
+        app:layout_constraintEnd_toStartOf="@+id/donkey"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton44"
+        app:layout_constraintTop_toBottomOf="@+id/snake"
         app:srcCompat="@drawable/tiger" />
 
     <ImageButton
-        android:id="@+id/imageButton47"
+        android:id="@+id/donkey"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#FA7E3B"
         android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton49"
+        app:layout_constraintEnd_toStartOf="@+id/fox"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton48"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton45"
+        app:layout_constraintStart_toEndOf="@+id/dog"
+        app:layout_constraintTop_toBottomOf="@+id/crocodile"
         app:srcCompat="@drawable/tiger" />
 
     <ImageButton
-        android:id="@+id/imageButton49"
+        android:id="@+id/fox"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FA7E3B"
+        android:contentDescription="@string/animal_name"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/donkey"
+        app:layout_constraintTop_toBottomOf="@+id/deer"
+        app:srcCompat="@drawable/tiger" />
+
+    <ImageButton
+        android:id="@+id/horse"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FA7E3B"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/lion"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dog"
+        app:srcCompat="@drawable/tiger" />
+
+    <ImageButton
+        android:id="@+id/lion"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FA7E3B"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/monkey"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/horse"
+        app:layout_constraintTop_toBottomOf="@+id/donkey"
+        app:srcCompat="@drawable/tiger" />
+
+    <ImageButton
+        android:id="@+id/monkey"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
@@ -146,38 +189,39 @@
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton47"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton46"
+        app:layout_constraintStart_toEndOf="@+id/lion"
+        app:layout_constraintTop_toBottomOf="@+id/fox"
         app:srcCompat="@drawable/tiger" />
 
     <ImageButton
-        android:id="@+id/imageButton51"
+        android:id="@+id/ostrich"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#FA7E3B"
         android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton50"
+        app:layout_constraintEnd_toStartOf="@+id/girafee"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton48"
+        app:layout_constraintTop_toBottomOf="@+id/horse"
         app:srcCompat="@drawable/tiger" />
 
     <ImageButton
-        android:id="@+id/imageButton50"
+        android:id="@+id/girafee"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#FA7E3B"
+        android:contentDescription="@string/animal_name"
         android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton52"
+        app:layout_constraintEnd_toStartOf="@+id/tortoise"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton51"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton47"
+        app:layout_constraintStart_toEndOf="@+id/ostrich"
+        app:layout_constraintTop_toBottomOf="@+id/lion"
         app:srcCompat="@drawable/tiger" />
 
     <ImageButton
-        android:id="@+id/imageButton52"
+        android:id="@+id/tortoise"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
@@ -185,60 +229,21 @@
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton50"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton49"
+        app:layout_constraintStart_toEndOf="@+id/girafee"
+        app:layout_constraintTop_toBottomOf="@+id/monkey"
         app:srcCompat="@drawable/tiger" />
 
     <ImageButton
-        android:id="@+id/imageButton56"
+        android:id="@+id/snake"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="#FA7E3B"
         android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton53"
+        app:layout_constraintEnd_toStartOf="@+id/crocodile"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton51"
-        app:srcCompat="@drawable/tiger" />
-
-    <ImageButton
-        android:id="@+id/imageButton53"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#FA7E3B"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton55"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton56"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton50"
-        app:srcCompat="@drawable/tiger" />
-
-    <ImageButton
-        android:id="@+id/imageButton55"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#FA7E3B"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton53"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton52"
-        app:srcCompat="@drawable/tiger" />
-
-    <ImageButton
-        android:id="@+id/imageButton44"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#FA7E3B"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton45"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton42"
+        app:layout_constraintTop_toBottomOf="@+id/panda"
         app:srcCompat="@drawable/tiger" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
