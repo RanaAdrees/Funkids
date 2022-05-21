@@ -9,49 +9,49 @@
     tools:context=".Quiz">
 
     <Button
+        android:id="@+id/option4"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#EF7912"
+        android:text="Dog"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/option3"
+        app:layout_constraintTop_toBottomOf="@+id/option2" />
+
+    <Button
         android:id="@+id/option3"
         android:layout_width="140dp"
         android:layout_height="65dp"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#E91E63"
-        android:text="Cat"
+        android:backgroundTint="#E3AC06"
+        android:text="Lion"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/option4"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/option2"
-        app:layout_constraintTop_toBottomOf="@+id/option" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correct" />
 
     <Button
         android:id="@+id/option2"
         android:layout_width="140dp"
         android:layout_height="65dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#E91E63"
-        android:text="Cat"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/option3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/option1" />
-
-    <Button
-        android:id="@+id/option"
-        android:layout_width="140dp"
-        android:layout_height="65dp"
-        android:backgroundTint="#E91E63"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="#0C600F"
         android:text="Crocodile"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/option1"
-        tools:layout_editor_absoluteY="665dp" />
+        app:layout_constraintStart_toEndOf="@+id/correct"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        android:layout_marginTop="116dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:layout_height="350dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,17 +70,18 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="538dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/option1"
+        android:id="@+id/correct"
         android:layout_width="140dp"
         android:layout_height="65dp"
+        android:layout_marginTop="26dp"
         android:backgroundTint="#E91E63"
         android:text="Cat"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/option"
+        app:layout_constraintEnd_toStartOf="@+id/option2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="665dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
