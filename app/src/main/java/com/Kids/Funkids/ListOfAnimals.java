@@ -10,6 +10,14 @@ import android.widget.ImageButton;
 
 public class ListOfAnimals extends AppCompatActivity {
 
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_list_of_animals);
+    }
+
+
     public void animalFunc(View view)
     {
         int id=view.getId();
@@ -20,10 +28,5 @@ public class ListOfAnimals extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_of_animals);
-    }
 
 }

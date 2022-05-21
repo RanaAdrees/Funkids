@@ -10,13 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Funkids">
         <activity
+            android:name=".Quiz"
+            android:exported="false" />
+        <activity
             android:name=".Animal"
             android:exported="false" />
         <activity
             android:name=".ListOfAnimals"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
