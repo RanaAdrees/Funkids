@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Funkids">
         <activity
+            android:name=".ExamResult"
+            android:exported="false" />
+        <activity
             android:name=".Quiz"
             android:exported="false" />
         <activity
@@ -17,7 +20,7 @@
             android:exported="false" />
         <activity
             android:name=".ListOfAnimals"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

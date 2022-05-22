@@ -14,7 +14,7 @@
         android:layout_marginBottom="52dp"
         android:drawableStart="@mipmap/ic_launcher_foreground"
         android:shadowRadius="10"
-        android:text="Quiz"
+        android:text="Exam"
         android:textSize="20sp"
         app:cornerRadius="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
