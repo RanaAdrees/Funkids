@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view){
 
         Intent intent;
-        Uri webPage=Uri.parse("https://github.com/RanaAdrees");
+        Uri webPage=Uri.parse("https://github.com/RanaAdrees/Funkids");
         switch (view.getId()){
             case R.id.start:
                 intent=new Intent(this,ListOfAnimals.class);
