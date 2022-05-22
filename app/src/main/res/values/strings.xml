@@ -2,4 +2,5 @@
     <string name="app_name">Funkids</string>
     <string name="animal_name">animal</string>
     <string name="question">Check the Image and select one from the above options?</string>
+    <string name="result_desc">Each question is of 10 points</string>
 </resources>

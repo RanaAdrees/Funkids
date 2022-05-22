@@ -12,11 +12,11 @@
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="250dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qNumber"
         app:srcCompat="@drawable/cat" />
 
     <TextView
@@ -35,10 +35,11 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="416dp"
         android:layout_height="294dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
         android:orientation="vertical"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,34 +51,45 @@
         <Button
             android:id="@+id/option2"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:backgroundTint="#0C600F"
             android:text="Crocodile"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/correct"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:backgroundTint="#E91E63"
             android:text="Cat"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/option3"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:backgroundTint="#E3AC06"
             android:text="Lion"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/option4"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:backgroundTint="#EF7912"
             android:text="Dog"
-            android:textSize="16sp" />
+            android:textSize="20sp" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/qNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Question 1"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

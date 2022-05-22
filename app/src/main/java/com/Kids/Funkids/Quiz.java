@@ -2,10 +2,12 @@ package com.Kids.Funkids;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -16,7 +18,9 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
 
     Button option1, option2, option3, option4;
     ImageView img;
-    int result = 0, counter = 0;
+    TextView qNumber;
+    int result = 0, counter = 0,num=0;
+
     ArrayList<Integer> numberList = new ArrayList<>();
 
 
@@ -39,6 +43,8 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
 
         img=findViewById(R.id.imageView);
 
+        qNumber=findViewById(R.id.qNumber);
+
 
         numberList = uniqueRandomNumbers();
     }
@@ -47,7 +53,11 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
 
         ArrayList<Integer> list = new ArrayList<Integer>();
         for (int i = 1; i < 18; i++) {
-            list.add(i);
+            if(i!=3)
+            {
+                list.add(i);
+            }
+
         }
         Collections.shuffle(list);
         return list;
@@ -58,6 +68,8 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View view) {
         counter += 1;
         if (counter < 10) {
+            num=counter+1;
+            qNumber.setText("Question "+num);
             if (view.getId() == R.id.correct) {
                 result += 10;
                 Toast.makeText(this, "correct", Toast.LENGTH_SHORT).show();
@@ -349,7 +361,10 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
 
         }
         else{
-
+            Intent intent=new Intent(this,ExamResult.class);
+            intent.putExtra("number","Points: "+result);
+            Toast.makeText(this, "Result:"+result, Toast.LENGTH_SHORT).show();
+            startActivity(intent);
         }
 
     }
