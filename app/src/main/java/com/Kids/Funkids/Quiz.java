@@ -81,7 +81,6 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
             int number = numberList.get(counter);
 
 
-            Toast.makeText(this, "Num:" + number, Toast.LENGTH_SHORT).show();
 
             // random number generate
             switch (number) {
@@ -361,6 +360,10 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
 
         }
         else{
+            if (view.getId() == R.id.correct) {
+                result += 10;
+                Toast.makeText(this, "correct", Toast.LENGTH_SHORT).show();
+            }
             Intent intent=new Intent(this,ExamResult.class);
             intent.putExtra("number","Points: "+result);
             Toast.makeText(this, "Result:"+result, Toast.LENGTH_SHORT).show();
