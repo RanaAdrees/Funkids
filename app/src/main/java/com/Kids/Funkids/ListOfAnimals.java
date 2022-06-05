@@ -18,15 +18,15 @@ public class ListOfAnimals extends AppCompatActivity {
     }
 
 
-    public void animalFunc(View view)
-    {
-        int id=view.getId();
-        String name=view.getResources().getResourceEntryName(id);
-        Intent intent=new Intent(this,Animal.class);
-        intent.putExtra("animalName",name);
-        startActivity(intent);
-
-    }
+//    public void animalFunc(View view)
+//    {
+//        int id=view.getId();
+//        String name=view.getResources().getResourceEntryName(id);
+//        Intent intent=new Intent(this,Animal.class);
+//        intent.putExtra("animalName",name);
+//        startActivity(intent);
+//
+//    }
 
 
 }
