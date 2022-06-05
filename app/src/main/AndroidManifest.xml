@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Funkids">
         <activity
+            android:name=".CustomListView"
+            android:exported="false" />
+        <activity
             android:name=".ExamResult"
             android:exported="false" />
         <activity
