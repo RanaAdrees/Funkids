@@ -10,15 +10,15 @@ import android.widget.ListView;
 
 public class ListOfAnimals extends AppCompatActivity {
 
-    String animalList[]={"Cat","Cat","Crocodile","Dog","Deer","Donkey","Elephant",
+    String animalList[]={"Cat","Crocodile","Dog","Deer","Donkey","Elephant",
                          "Fox","Giraffe","Horse","Lion","Monkey","Ostrich",
-                         "Panda","Rabbit","Rhino","Snake","Tiger","Tortoise","Tortoise"};
+                         "Panda","Rabbit","Rhino","Snake","Tiger","Tortoise"};
 
-    int animalImages[]= { R.drawable.cat,R.drawable.cat,R.drawable.crocodile, R.drawable.dog, R.drawable.deer,
+    int animalImages[]= { R.drawable.cat,R.drawable.crocodile, R.drawable.dog, R.drawable.deer,
                         R.drawable.donkey, R.drawable.elephant, R.drawable.fox, R.drawable.giraffe,
                         R.drawable.horse,R.drawable.lion,R.drawable.monkey,R.drawable.ostrich,
                        R.drawable.panda,R.drawable.rabbit,R.drawable.rhino,R.drawable.snake,
-                       R.drawable.tiger,R.drawable.tortoise,R.drawable.tortoise};
+                       R.drawable.tiger,R.drawable.tortoise};
 
     ListView listView;
 
