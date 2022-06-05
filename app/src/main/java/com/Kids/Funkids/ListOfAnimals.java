@@ -10,6 +10,15 @@ import android.widget.ImageButton;
 
 public class ListOfAnimals extends AppCompatActivity {
 
+    String animalList[]={"Cat","Crocodile","Dog","Deer","Donkey","Elephant",
+                         "Fox","Giraffe","Horse","Lion","Monkey","Ostrich",
+                         "Panda","Rabbit","Rhino","Snake","Tiger","tortoise"};
+
+    int animalImages[]= {R.drawable.cat, R.drawable.crocodile, R.drawable.dog, R.drawable.deer,
+            R.drawable.donkey, R.drawable.elephant, R.drawable.fox, R.drawable.giraffe,
+            R.drawable.horse,R.drawable.lion,R.drawable.monkey,R.drawable.ostrich,R.drawable.panda,
+            R.drawable.rabbit,R.drawable.rhino,R.drawable.snake,R.drawable.tiger,R.drawable.tortoise};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
